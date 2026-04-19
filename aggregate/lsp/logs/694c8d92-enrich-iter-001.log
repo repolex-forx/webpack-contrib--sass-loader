@@ -1,0 +1,20 @@
+[2026-04-19T05:33:31Z] === ENRICH ITERATION 1 START | repo=webpack-contrib/sass-loader sha=694c8d92 ===
+[2026-04-19T05:33:31Z] [iter=1] PHASE START: enrich repo=webpack-contrib/sass-loader sha=694c8d92 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/694c8d92-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/694c8d92abf8e30f934810878281c7b227eb32a8.nq.gz
+[2026-04-19T05:34:01Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=81 MB
+[2026-04-19T05:34:02Z] [iter=1] AST store loaded triples=238681 load_secs=2 mem_mb=451 MB
+[2026-04-19T05:34:02Z] [iter=1] Step 2: Finding LSP targets mem_mb=451 MB
+[2026-04-19T05:34:03Z] [iter=1] LSP targets found call_sites=3494 imports=54 extends=0 implements=0 secs=0
+[2026-04-19T05:34:03Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=451 MB
+[2026-04-19T05:34:04Z] [iter=1] Position index built positions=16084 nodes_with_types=19764 secs=1 mem_mb=451 MB
+[2026-04-19T05:34:04Z] [iter=1] Step 3: Starting LSP resolution mem_mb=451 MB already_completed_types=[] already_completed_files=0
+[2026-04-19T05:34:04Z] [iter=1] Resolving target type target_type=call_site count=3494
+[2026-04-19T05:34:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=0 resolved=0 errors=0 current=test/loader.test.js
+[2026-04-19T05:35:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=1 resolved=0 errors=848 current=test/validate-options.test.js
+[2026-04-19T05:35:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=5 resolved=17 errors=1239 current=test/sassOptions-option.test.js
+[2026-04-19T05:36:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.7 files_done=15 resolved=473 errors=1612 current=test/helpers/getCompiler.js
+[2026-04-19T05:36:16Z] [iter=1] Target type resolved target_type=call_site resolved=496 errors=1668 secs=132 mem_mb=451 MB
+[2026-04-19T05:36:16Z] [iter=1] Resolving target type target_type=import_statement count=54
+[2026-04-19T05:36:18Z] [iter=1] Target type resolved target_type=import_statement resolved=19 errors=0 secs=2 mem_mb=451 MB
+[2026-04-19T05:36:21Z] [iter=1] Step 5: Writing final enrichment file triples=24809
+[2026-04-19T05:36:21Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/694c8d92abf8e30f934810878281c7b227eb32a8.nq.gz size_kb=419
+[2026-04-19T05:36:21Z] [iter=1] PHASE END: enrich elapsed_s=171 elapsed_min=2.8 total_triples=24809
